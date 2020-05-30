@@ -1,0 +1,55 @@
+{
+  "name": "react-typescript-mobx-sass-webpack_boilerplate",
+  "version": "1.1.0",
+  "description": "",
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "mobx",
+    "typescript",
+    "sass",
+    "starter-kit"
+  ],
+  "author": "Michael Raffaele <michael@mraffaele.com> (http://github.com/mraffaele)",
+  "license": "MIT",
+  "main": "src/js/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mraffaele/react-typescript-mobx-sass-webpack_boilerplate"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server  --env.environment development",
+    "prod": "webpack -p  --env.environment production"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "ts-loader": "^3.4.0",
+    "typescript": "^3.8.3",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "@types/react-router-dom": "^5.1.5",
+    "axios": "^0.19.2",
+    "es6-promise-promise": "^1.0.0",
+    "file-loader": "^6.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-form": "^8.3.5",
+    "redux-saga": "^1.1.3"
+  }
+}

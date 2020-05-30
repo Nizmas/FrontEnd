@@ -1,0 +1,121 @@
+.header
+  min-width: $min-width
+  height: 75px
+  background: $grey
+
+  .wrapper
+    display: flex
+    align-items: center
+    position: relative
+
+    .logo
+      margin-right: 30px
+
+    .navigation
+      @include blackFont
+      display: flex
+      a
+        margin: 4px 36px 0 0
+        width: 100%
+        font-size: 16px
+        text-transform: uppercase
+        display: inline-block
+        &::after
+          content: ""
+          display: block
+          background: #000
+          margin-left: 0px
+          width: 16px
+          height: 4px
+          transition: width .3s ease-in-out
+        &:nth-child(1)
+          &:hover
+            &::after
+              width: 97%
+          &::after
+            background: #F2B46B
+            margin-left: 2px
+        &:nth-child(2)
+          &:hover
+            &::after
+              width: 98%
+          &::after
+            background: #8EF26B
+            margin-left: 1px
+        &:nth-child(3)
+          &:hover
+            &::after
+              width: 100%
+          &::after
+            background: #6BC2F2
+        &:nth-child(4)
+          &:hover
+            &::after
+              width: 100%
+          &::after
+            background: #8E6BF2
+        &:nth-child(5)
+          &:hover
+            &::after
+              width: 100%
+          &::after
+            background: #F26BAC
+        &:nth-child(6)
+          &:hover
+            &::after
+              width: 100%
+          &::after
+            background: #F26B6B
+            margin-left: 1px
+
+    .language
+      display: flex
+      margin: 0 60px 0 auto
+      justify-content: space-between
+      width: 140px
+      height: 28px
+      span
+          @include blackFont
+          font-size: 12px
+          line-height: 28px
+          text-transform: lowercase
+      .language-change
+        width: 75px
+        height: 100%
+        display: flex
+        justify-content: space-between
+        padding: 4px 5px
+        box-sizing: border-box
+        background: #e4e4e4
+        svg
+          transition: filter .3s ease-in-out
+          &:hover
+            cursor: pointer
+            filter: brightness(1.25)
+
+    .search
+      position: absolute
+      right: 20px
+      width: 256px
+      height: 40px
+      input
+        display: block
+        box-sizing: border-box
+        padding-left: 20px
+        width: 100%
+        height: 100%
+        background: #fff
+        box-shadow: 0 2px 0 rgba(0,0,0,.15)
+        &::placeholder
+          color: #ababab
+          text-transform: lowercase
+          font-face: "RubikLight"
+      .search-icon
+        display: block
+        position: absolute
+        top: 8px
+        right: 15px
+        svg
+          transition: transform .3s ease-in-out
+          &:hover
+            transform: scale(1.1)
